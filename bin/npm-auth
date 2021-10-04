@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 starttime=$(date +%s.%N)
 username="${NPM_USERNAME:-$PLUGIN_USERNAME}"
