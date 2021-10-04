@@ -37,7 +37,7 @@ if [ -z "$token" ]; then
         scope_option="--scope=$scope"
     fi
 
-    expect-npm-auth "npm login --registry $registry $scope_option" $username $password $email
+    /bin/expect-npm-auth "npm login --registry $registry $scope_option" $username $password $email
 else
     echo "//$registry/:_authToken=$token" > ~/.npmrc
 fi
