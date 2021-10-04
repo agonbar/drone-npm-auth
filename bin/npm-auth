@@ -15,8 +15,8 @@ echo "-- Setting up authentication from NPM..."
 
 if [ -z "$registry" ]; then
     registry="registry.npmjs.org"
-    echo "Using as registry: $registry"
 fi
+echo "Using as registry: $registry"
 if [ -z "$token" ]; then
     echo "No token set, using user/password auth with the user: $username"
     if [ -z "$username" ]; then
